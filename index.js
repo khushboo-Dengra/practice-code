@@ -5,7 +5,7 @@ const getData = (x, a, y) => {
 
   let index = -1;
 
-  for (let i = 0; i < x; i++) {
+  for (let i = 0; i < a.length; i++) {
     if (a[i] === y) {
       index = i;
       break;
@@ -14,5 +14,5 @@ const getData = (x, a, y) => {
   return index;
 };
 
-// const result=getData(4, '4 5 7 8', 3);
-console.log(getData(4, '4 5 7 8', 7));
+const result = getData(4, '4 5 7 8', 7);
+console.log(result);
